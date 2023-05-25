@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
+
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+    
+    
+
+</head>
+
+<body id="pagebody">
+   
+    <header class="header_wrapper" id="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/pngwing.com.png" class="img-fluid" alt="logo" width="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="about.html">Hotels</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#price">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a> 
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-info">
+                                <a href="log.html">Signin</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-info" style="color: white!important;"><a href="signup.html">signup</a></button>
+                        </li>
+
+                        
+                      
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button"  id="btnr" class="btn btn-secondary" style="border-radius: 50px; height: 10%; margin-top: auto;" ></button>
+                            <button type="button" id="btnw" class="btn btn-secondary" style="border-radius: 50px;height: 10px;margin-top: auto;"></button>
+                            <!-- <button type="button" class="btn btn-secondary">Right</button> -->
+                          </div>
+                        <!-- <button id="btnr" style="border-radius: 50px; border:none;font-size: 13px; height: 17px;margin-top:20px">dark</button>
+                        <button id="btnw"style="border-radius: 50px; border:none;font-size:13px; height: 17px;margin-top:20px">light</button> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar section exit -->
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper p-0">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="bann" style="background-image: url(./im/im1.jpg);width: 100%;height: 100vh;">
+                    <div class="slide-caption text-center">
+                        <div>
+                            <h1 id="demo" onclick="Change();">Find Your Next Stay</h1>
+                            <p>search low price on Hotels and much more Lorem ipsum dolor sit amet consectetur adipisCjicing elit. Saepe optio nisi, hic laboriosam repellat iste earum debitis ad expedita quasi tempora impedit rem dolorem commodi ipsam quod obcaecati dolor quis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="container booking-area">
+            <form class="row" >
+                <div class="col-lg mb-3 mb-lg-0">
+                    <input type="date"  id=" date"class="form-control" placeholder="Date">
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <input type="date"  id=" date1"class="form-control" placeholder="Date">
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <select class="form-select">
+                        <option selected>Adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <select class="form-select">
+                        <option selected>Children</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <select class="form-select">
+                        <option selected>Room</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <button type="submit" class="main-btn rounded-2 px-lg-3">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Banner section exit -->
+
+    <!-- About section -->
+    <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row flex-lg-row flex-column-reverse ">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h3 id="head">Welcome to <span>Hotel <br class="d-none d-lg-block">
+                            the haven</span> of your weekend</h3>
+                    <p id="pra">lorum luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                        dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius</p>
+                    <p id="pra1">lorum luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                        dolores eos qui ratione voluptatem</p>
+                    <a href="about.html"  class="main-btn mt-4" id="btnexplore">Explore</a>
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+                    <img src="img/h3.jpg" class="img-fluid"  id="ch1" alt="About Us " onmouseover="change();" onmouseout="preimage();">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section exit -->
+
+    <!-- Rooms section -->
+    <section id="rooms" class="rooms_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5" >
+                    <h6 id="headh">What I can do for you</h6>
+                    <h3 id="headhh">Our Top Hotels</h3>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-item">
+                        <img src="./img/th1.jpg" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline"> Taj Hotel </h5>
+                                <p class="text-white">Discover five of our iately</p>
+                                <p class="text-white fw-bold mt-lg-4">38,000Rs/ Per Night</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-item">
+                        <img src="./img/th2.jpg" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">Marriott Hotel</h5>
+                                <p class="text-white">Discover five of our favourite</p>
+                                <p class="text-white fw-bold mt-lg-4">21,475 Rs/ Per Night</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-item">
+                        <img src="./img/th3.jpg" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">  Hotel lackview</h5>
+                                <p class="text-white">Discover immediately</p>
+                                <p class="text-white fw-bold mt-lg-4">45000Rs / Per Night</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rooms Section Exit -->
+
+    <!-- Services section -->
+    <section id="services" class="services_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6 id="heads">We Are Here For You</h6>
+                    <h3 id="headss">Our Awesome Services</h3>
+                </div>
+            </div>
+            <div class="row align-items-center service-item-wrap">
+                <div class="col-lg-7 p-lg-0">
+                    <!--Service Area Start-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade active show" id="spa" role="tabpanel">
+                            <img src="./img/s1.jpg" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="restaurent" role="tabpanel">
+                            <img src="./img/re1.jpg" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="swimming" role="tabpanel">
+                            <img src="img/sw1.jpg" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="conference" role="tabpanel">
+                            <img src="./img/c1.jpg" alt="">
+                        </div>
+                    </div>
+                    <!--Service Area End-->
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <!--Service Tab Menu Area Start-->
+                    <div class="service-menu-area">
+                        <ul class="nav">
+                            <li>
+                                <a data-bs-toggle="tab" href="#spa" class="active">
+                                    <span class="service-icon">
+                                        <img src="......" alt="">
+                                    </span>
+                                    <h5>Spa, beauty & Health</h5>
+                                    <p><span>Spa and beauty </span>luptatem quia voluptas sit aspernatur aut odit aut
+                                        fugit, sed quia </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#restaurent">
+                                    <span class="service-icon">
+                                        <img src="........" alt="">
+                                    </span>
+                                    <h5>Restaurant</h5>
+                                    <p><span>Restaurant</span> lup provide grro tatem quia voluptas sit aspernatur aut
+                                        odit aut fugit, </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#swimming">
+                                    <span class="service-icon">
+                                        <img src="......" alt="">
+                                    </span>
+                                    <h5>Swimming Pool</h5>
+                                    <p><span>Swimming</span> pool luptatem quia voluptas sit aspernatur aut odit aut
+                                        fugit, sed quia </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#conference">
+                                    <span class="service-icon">
+                                        <img src="." alt="">
+                                    </span>
+                                    <h5>Conference Hall</h5>
+                                    <p><span>Conference</span> luptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                        sed quia </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section> 
+    <!-- Services section Exit -->
+
+    <!-- Team section -->
+    <section id="team" class="team_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6 id="headtt">What I can do for you</h6>
+                    <h3 id="headt">Our Special Staff</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0 rounded-3">
+                        <img src="img/m4.jpg" class="img-fluid rounded-3" />
+                        <div class="team-info">
+                            <h5>Rinki Sharma</h5>
+                            <p>Manager</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0 rounded-3">
+                        <img src="img/m1.jpg" class="img-fluid rounded-3" />
+                        <div class="team-info">
+                            <h5>Rink sharma</h5>
+                            <p>Chif Reciption Officer</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0 rounded-3">
+                        <img src="img/m2.jpg" class="img-fluid rounded-3" />
+                        <div class="team-info">
+                            <h5>Harshita sharma</h5>
+                            <p>Master Chef</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0 rounded-3">
+                        <img src="img/m3.jpg" class="img-fluid rounded-3" />
+                        <div class="team-info">
+                            <h5>Rinki Sharma</h5>
+                            <p>Housekeeping</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section Exit  -->
+
+    <!-- Gallery section -->
+    <section id="gallery" class="gallery_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6 id="headgg">Best Pictures Of Our Hotel</h6>
+                    <h3 id="headg">Our Gallery</h3>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/g1.jpg" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/g2.jpg" class="img-fluid w-80">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/g3.jpg" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/g4.jpg" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-md-6 gallery-item">
+                    <img src="./im/im1.jpg" class="img-fluid w-100">
+                    <div class="gallery-item-content"> </div>
+                </div>
+                <div class="col-md-6 gallery-item">
+                    <img src="./img/h3.jpg" class="img-fluid w-100">
+                    <div class="gallery-item-content"> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section Exit -->
+
+    <!-- Pricing section -->
+    <section id="price" class="price_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6 id="headbb">Best & Affordable Price for you</h6>
+                    <h3 id="headb">Our Pricing</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-4 text-center rounded-3">
+                        <h4 class="text-decoration-underline mb-4">Radisson Blu Hotel </h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Pamper yourself with a visit to the spa, which offers massages. If you're looking for recreational opportunities,you'll find an outdoor </p>
+                            </li>
+                            
+                        </ul>
+                        <hr />
+                        <h3>32,000Rs<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+                        <a href="#" class="main-btn">Sign Up</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-4 text-center rounded-3">
+                        <h4 class="text-decoration-underline mb-4">Marriott Hotel</h>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Relax at the full-service spa, where you can enjoy massages. If you're looking for recreational opportunities, you'll find an outdoor you'll find an outdoor.you'll find an outdoor.you'll find an outdoor find an outdoor find an outdoor.you'll find an outdoor find an outdoor.you'll find an outdoor</p>
+                            </li>
+                        </ul>
+                        <hr />
+                        <h3>38,000Rs<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+                        <a href="#" class="main-btn">Sign Up</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-4 text-center rounded-3">
+                        <h4 class="text-decoration-underline mb-4">Hotel Landmark</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Enjoy the recreation opportunities such as an outdoor pool or make use of other amenities including complimentary wireless Internet accessyou'll find an outdoor.V find an outdoor.you'll find an outdoor find an outdoor.you'll find an outdooryou'll find an outdooryou'll find an outdoor
+                                    Dining</p>
+                            </li>
+                        </ul>
+                        <hr />
+                        <h3>45,000Rs<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+                        <a href="#" class="main-btn">Sign Up</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-4 text-center rounded-3">
+                        <h4 class="text-decoration-underline mb-4">Taj Lakefront </h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Relax at the full-service spa, where you can enjoy massages, body treatments, and facials.you'll find a nightclub, an outdoor pool,you'll find an  find an outdoor.you'll find an outdoor find an outdoor.you'll find an outdooroutdooryou'll find an outdooryou'll  find an outdoor.you'll find an outdoorfind an outdooryou'll find an outdooryou'll find an outdoor</p>
+                            </li>
+                        </ul>
+                        <hr />
+                        <h3>50,000Rs<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+                        <a href="#" class="main-btn">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section Exit  -->
+
+    <!-- Pricing section -->
+    <section id="blog" class="blog_wrapper pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6 id="headpp">Say Hello TO Our Visiters</h6>
+                    <h3 id="headp">Our Blog</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img src="img/h3.jpg" alt="" id="ch2" onmouseover="change1();" onmouseout="preimage1();">
+                        <div class="blog-content bg-white p-4">
+                            <h5 class="text-decoration-underline mb-4">Relax Zone</h5>
+                            <h2>By Admin - February 18, 2018</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                <button type="button" a href="#" class=" main-btn mt-2" data-bs-toggle="collapse" data-bs-target="#demo1"onclick="myFunction()" id="myBtn">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img src="img/h2.jpg" alt="" id="ch3"  onmouseover="change3();" onmouseout="preimage3();">
+                        <div class="blog-content bg-white p-4">
+                            <h5 class="text-decoration-underline mb-4">Relax Zone</h5>
+                            <h2>By Admin - February 18, 2018</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots1">...</span><span id="more1">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                <button type="button" a href="#" class=" main-btn mt-2" data-bs-toggle="collapse" data-bs-target="#demo1"onclick="myFun()" id="myBtn">Read more</button>
+                </div>
+            </div>
+        </div>
+       
+    <!-- Pricing Section Exit  -->
+<br><br>
+    <!--Footer section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0 bg-dark">
+        <div class="container pb-3">
+            <div class="row" style="color: white;">
+                <div class="col-lg-3 col-md-6">
+                    <h5>Hotel Location</h5>
+                    <p class="ps-0" id="p" style="color:  white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim erat ut laoreet
+                        pharetra....</p>
+                    <div class="contact-info"\">
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-home me-3"></i> No. 96, South City, </a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>+1 222 3333</a></li>
+                            <li><a href="#"><i class="fa fa-home me-3"></i> No. 96, South City, </a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>check@example.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>More Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Office</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                        <li><a href="#">Buy Gift Card</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Demo Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Office</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                        <li><a href="#">Buy Gift Card</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control bg-transparent" placeholder="enter your email here">
+                        <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
+                    </div>
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-items-center p-0">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-section">
+            <p>Copyright <a href="#">@ webside createrd by rinki sharma</a> All Rights Reserved</p>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Footer section exit
+
+    <!- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <!-- js link -->
+    <script src="hello.js"></script>
+
+    
+</body>
+
+</html>
+
