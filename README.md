@@ -1,7 +1,8 @@
 # frontend-project
 <h1 align="center">Hi 👋, I'm Rinki Sharma</h1>
 <h3 align="center">“Frontend developer from India, at the beginning of my journey to create user-friendly and visually appealing websites.”</h3>
-<img align = "right" alt="coding" width="400" src="https://www.bing.com/images/search?view=detailV2&ccid=YE%2BuRCE8&id=FC94D458B561F45544AE173581D7FBDFB3B892CF&thid=OIP.YE-uRCE8HJCsKCNXUiQ2pAHaFj&mediaurl=https%3A%2F%2Fres.cloudinary.com%2Fpracticaldev%2Fimage%2Ffetch%2Fs--O0u1bNHs--%2Fc_limit%252Cf_auto%252Cfl_progressive%252Cq_66%252Cw_880%2Fhttps%3A%2F%2Fmiro.medium.com%2Fmax%2F1400%2F0*PXf5ge7QCN9Ga_CL.gif&exph=600&expw=800&q=animated+coding+gif&simid=608028578115044555&form=IRPRST&ck=526CDAA3ED6A9D5B4F0FBA1D5F6BC6AD&selectedindex=50&itb=0&cw=1339&ch=664&ajaxhist=0&ajaxserp=0&vt=0">
+<img align = "right" alt="coding" width="400" src="![Uploading image.png…]()
+">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rinki2400&label=Profile%20views&color=0e75b6&style=flat" alt="rinki2400" /> </p>
 
