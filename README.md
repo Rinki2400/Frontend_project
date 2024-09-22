@@ -1,8 +1,7 @@
 # frontend-project
 <h1 align="center">Hi 👋, I'm Rinki Sharma</h1>
 <h3 align="center">“Frontend developer from India, at the beginning of my journey to create user-friendly and visually appealing websites.”</h3>
-<img align = "right" alt="coding" width="400" src="![Uploading image.png…]()
-">
+<img align = "right" alt="coding" width="400" src="Uploading image.png…">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rinki2400&label=Profile%20views&color=0e75b6&style=flat" alt="rinki2400" /> </p>
 
